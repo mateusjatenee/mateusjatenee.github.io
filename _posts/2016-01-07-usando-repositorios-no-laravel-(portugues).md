@@ -14,13 +14,17 @@ Mas e se a sua aplicação já for grande e você, por n motivos (testes, tempo,
 
 Vamos dizer que você quer mostrar um post. Geralmente, faríamos assim:  
 ```php
+<?php
 // app/Http/Controllers/PostsController.php
+...
 
 public method show($id) {
         $post = Post::find($id);
         return $post;
         // ou retornar uma view
 
+...
+?>
 ```
 
 Não seria muito fácil manter esse tipo de código caso o app crescesse muito. Usando repositórios, podemos fazer algo do tipo: 
@@ -51,6 +55,8 @@ class PostRepository
                 return $this->post->where($att, $column)
         }
 }
+
+?>
 
 ```
 
