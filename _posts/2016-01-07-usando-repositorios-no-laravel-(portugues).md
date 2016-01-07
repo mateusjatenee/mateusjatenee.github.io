@@ -13,17 +13,16 @@ Imagine que você tem um model chamado Post. Ele interage com a tabela ```Posts`
 Mas e se a sua aplicação já for grande e você, por n motivos (testes, tempo, stress) não pode fazer isso? você ainda está procurando os posts pelo ID em todo canto do app. Mas... e se pudéssemos fazer uma camada entre a regra de negócio e a camada de dados (banco de dados, no nosso caso)? Iria evitar - entre outras coisas - código duplicado, problemas com testes, código descentralizado, etc. É mais ou menos esse o propósito de repositórios. 
 
 Vamos dizer que você quer mostrar um post. Geralmente, faríamos assim:  
+
 ```php
 <?php
 // app/Http/Controllers/PostsController.php
-...
 
 public method show($id) {
         $post = Post::find($id);
         return $post;
         // ou retornar uma view
-
-...
+        
 ?>
 ```
 
@@ -55,7 +54,6 @@ class PostRepository
                 return $this->post->where($att, $column)
         }
 }
-
 ?>
 
 ```
@@ -91,3 +89,17 @@ class PostsController
 Dê uma olhada no que fizemos: primeiro, nós injetamos o nosso repositório, ```PostRepository``` no construtor e depois, no método ```show``` nós simplesmente usamos um método do repositório para achar posts em que a coluna slug da tabela posts tem o valor de  ```$slug```. O código está centralizado, fácil de testar e fácil de manter. 
 
 Espero que esse tutorial tenha ajudado alguém e mil desculas por quaisquer erros cometidos durante ele. :-)
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        
+        
+        
+        
