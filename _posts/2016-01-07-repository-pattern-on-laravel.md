@@ -2,7 +2,7 @@
 layout: post
 title: "Repository Pattern on Laravel"
 date: 2016-01-07 04:18:00
-image: '/assets/img/'
+image: '/assets/img/blog-image.png'
 description:
 tags:
 - php
