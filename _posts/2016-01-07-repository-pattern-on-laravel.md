@@ -14,11 +14,12 @@ categories:
 twitter_text:
 ---
 
-Let's say you have a model called Post. It retrieve data from the ```Posts``` table and you use it in many methods and it is almost in the whole application. For now, it retrieves posts by it's ID, but your boss told you he wants it to retrieve by the post's name (slug). Now, there are two possibilities: your application is not big enough and you can just find and replace every ```Post::findOrFail($id)``` with something like ```Post::where('slug', $slug)->get()```. Perfect, everything works fine!  
+Let's say you have a model called Post. It retrieve data from the ```Posts``` table and you use it in many methods and it is almost in the whole application. For now, it retrieves posts by it's ID, but your boss told you he wants it to retrieve by the post's name (slug). Now, there are two possibilities: your application is not big enough and you can just find and replace every ```Post::find($id)``` with something like ```Post::where('slug', $slug)->get()```. Perfect, everything works fine!  
 But what if your app is so big it will just take too much time/stress/whatever to change everything, you're retrieving the post by it's ID everywhere. What If we could create a layer between the business model and the data storing layer - in this case, our controller methods and the database? It would be nice, wouldn't it? It would avoid - between other things - duplicated code, testing, uncentralized code, etc. That's kind of what the repository pattern is about. 
 
 Let's say you want to show a post. You'd usually do something like this:
 {% highlight php %}
+<?php
 // app/Http/Controllers/PostsController.php
 
 public method show($id) {
@@ -26,6 +27,7 @@ public method show($id) {
 	return $post;
 	// or return a view, whatever.
 }
+?>
 {% endhighlight %}
 
 So, it wouldn't be very easy to mantain this code if things get big. With the Repository Pattern, you could do something like this:
