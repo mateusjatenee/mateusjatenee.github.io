@@ -44,6 +44,8 @@ use App\Post;
 class PostRepository
 {
 
+	protected $post;
+
 	public function __construct(Post $post)
 	{
 	    $this->post = $post;
@@ -76,7 +78,7 @@ use App\Repositories\PostRepository;
 
 class PostsController
 {
-	private $post;
+	protected $post;
 
 	public function __construct(PostRepository $post)
 	{
@@ -92,6 +94,6 @@ class PostsController
 
 {% endhighlight %}
 
-So, take a look at what we did - first, we made the $post variable private. Then, we injected the PostRepository dependecy in the constructor (thanks Laravel IoC) and then we just used a function from PostRepository. Now we can use one method in multiple places and change how it behaves at multiplace places on just one place - your code is "centralized", you know where everything is and it's way easier to mantain. 
+So, take a look at what we did - first, we made the $post variable protected. Then, we injected the PostRepository dependecy in the constructor (thanks Laravel IoC) and then we just used a function from PostRepository. Now we can use one method in multiple places and change how it behaves at multiplace places on just one place - your code is "centralized", you know where everything is and it's way easier to mantain. 
 
 I hope this tutorial helped, not really at writing them. Sorry for any mistakes I made in the tutorial.
