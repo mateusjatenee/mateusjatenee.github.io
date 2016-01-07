@@ -14,12 +14,13 @@ gplus_username:  mateusjatenee
 disqus_username: mateusjatenee
 
 # Build settings
-markdown: kramdown
+markdown: redcarpet
 highlighter: pygments
 permalink: /:title/
 
 kramdown:
   input: GFM
+
 
 
 # html minify
