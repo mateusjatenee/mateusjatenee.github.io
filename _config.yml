@@ -18,6 +18,9 @@ markdown: kramdown
 highlighter: pygments
 permalink: /:title/
 
+kramdown:
+  input: GFM
+
 
 # html minify
 compress_html:
