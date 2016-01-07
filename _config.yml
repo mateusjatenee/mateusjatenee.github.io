@@ -1,7 +1,7 @@
 # Site settings
 description:  A blog about programming
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://mateusjatenee.github.io" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
+url: "http://mguimaraes.co" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
 # User settings
 username: Mateus Guimarães
