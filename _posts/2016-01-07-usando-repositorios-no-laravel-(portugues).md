@@ -1,11 +1,17 @@
 ---
 layout: post
-title: "Usando repositórios no Laravel (Português)"
+title: "Usando repositórios com Laravel (Português)"
 date: 2016-01-07 18:37:48
-image: '/assets/img/blog-image.png'
+image: '/assets/img/posts/usando-repositorios-no-laravel-portugues.png'
 description:
 tags:
+- php
+- laravel
+- patterns
+- portuguese
 categories:
+- php
+- laravel
 twitter_text:
 ---
 
