@@ -2,7 +2,7 @@
 layout: post
 title: "Novidades do Laravel 5.2 (Português)"
 date: 2016-01-09 04:59:46
-image: '/assets/img/'
+image: '/assets/img/novidades-do-laravel-52.png'
 description:
 tags:
 - php
