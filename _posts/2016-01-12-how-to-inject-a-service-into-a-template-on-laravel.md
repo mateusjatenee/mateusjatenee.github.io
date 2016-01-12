@@ -14,7 +14,7 @@ categories:
 twitter_text:
 ---
 
-In this tutorial I'm going to explain how to use Laravel 5.1 `service injection` feature.   
+In this tutorial I'm going to explain how to use Laravel 5.1 [`service injection`](https://laravel.com/docs/5.2/blade#service-injection) feature.   
 It was very common to have a view (a partial) that was shared between many controllers and that used information stored in the DB or something similar. In this case, the usual choice was to pass this data as a variable to all all views that included this `partial`. Here are some examples:  
 
 Your partial:  
@@ -49,7 +49,7 @@ public function show($id)
 
 ```
 
-The view `post/show` would have a variable and that pass it to the `sponsors` partial. Then, we would repeat the exact same in another controller to use in another view that also includes the sponsors.. and again, and again. Instead of this, we could inject `sponsorsService` directly in the partial. We would do it like this:
+The view `post/show` would have a variable and that pass it to the `sponsors` partial. Then, we would repeat the exact same thing in another controller to use in another view that also includes the sponsors.. and again, and again. Instead of this, we could inject `sponsorsService` directly in the partial. We would do it like this:
 
 ```html
 {% raw %}
