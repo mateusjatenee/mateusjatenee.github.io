@@ -56,7 +56,7 @@ Repare que nós tivemos que chamar o método `getAllSponsors()` que, nesse caso 
 @inject('sponsors', 'App\Services\Sponsors')
 <div class="sponsors">
 	<ul>
-		@foreach($sponsors as $sponsor)
+		@foreach($sponsors->getAllSponsors() as $sponsor)
 			<li>{{ $sponsor->name }}</li>
 		@endforeach
 	</ul>

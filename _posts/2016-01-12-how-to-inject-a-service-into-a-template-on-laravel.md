@@ -57,7 +57,7 @@ The view `post/show` would have a variable and that pass it to the `sponsors` pa
 @inject('sponsors', 'App\Services\Sponsors')
 <div class="sponsors">
 	<ul>
-		@foreach($sponsors as $sponsor)
+		@foreach($sponsors->getAllSponsors() as $sponsor)
 			<li>{{ $sponsor->name }}</li>
 		@endforeach
 	</ul>
