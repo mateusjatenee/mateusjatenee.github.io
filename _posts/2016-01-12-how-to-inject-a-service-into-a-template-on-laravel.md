@@ -35,7 +35,7 @@ In this case, we want do display our website sponsors. These sponsors may vary a
 
 ```php
 <?php
-// app/Http/Controllers/PostController
+// app/Http/Controllers/PostController.php
 ...
 
 public function show($id)
@@ -65,7 +65,8 @@ The view `post/show` would have a variable and that pass it to the `sponsors` pa
 {% endraw %}
 ``` 
 
-Take a look. Instead of passing the variable in every controller, we used `@inject` to easily inject it into the view. It requires two arguments: the first one is the variable `name` and the second one being the class or interface.  
+Take a look. Instead of passing the variable in every controller, we used the `@inject` directive to easily inject it into the view. It requires two arguments: the first one is the variable `name` and the second one being the class or interface.  
 This way, we don't have to worry about sending variables to every view that uses the sponsor list. We injected them directly in the view. :-)
 
+If you liked this post, please share it and leave a comment. I appreciate it!
 
