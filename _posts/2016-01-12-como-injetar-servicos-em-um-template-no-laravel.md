@@ -2,7 +2,7 @@
 layout: post
 title: "Como injetar serviços em um template no Laravel (Português)"
 date: 2016-01-12 01:06:50
-image: '/assets/img/posts/como-injetar-servicos-em-um-template-no-laravel'
+image: '/assets/img/posts/como-injetar-servicos-em-um-template-no-laravel.png'
 description: "Tutorial de como injetar serviços em um template no Laravel."
 tags:
 - php
