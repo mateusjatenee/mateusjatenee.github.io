@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Trabalhando com repositorios no Laravel: implementando uma interface e utilizando o Container"
+title: "Trabalhando com repositórios no Laravel: implementando uma interface e utilizando o Container"
 date: 2016-01-13 04:16:49
 image: '/assets/img/posts/trabalhando-com-repositorios-no-laravel-implementando-uma-interface.png'
 description: "Nesse post fala-se sobre a implementação de interfaces e uso do Container do Laravel e conclui o post sobre o Repository Pattern"

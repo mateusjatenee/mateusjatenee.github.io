@@ -97,7 +97,7 @@ Dê uma olhada no que fizemos: primeiro, nós injetamos o nosso repositório, ``
 
 Espero que esse tutorial tenha ajudado alguém e mil desculas por quaisquer erros cometidos durante ele. :-)
 
-**[Parte 2 do post: implementando interfaces e usando o container do Laravel](/2016-01-13-trabalhando-com-repositorios-no-laravel-implementando-uma-interface)**
+**[Parte 2 do post: implementando interfaces e usando o container do Laravel](/trabalhando-com-repositorios-no-laravel-implementando-uma-interface)**
         
         
         
