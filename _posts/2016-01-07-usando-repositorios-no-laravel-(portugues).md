@@ -12,6 +12,7 @@ tags:
 categories:
 - php
 - laravel
+- "Repository Pattern"
 twitter_text:
 ---
 
@@ -77,17 +78,17 @@ use App\Repositories\PostRepository;
 
 class PostsController
 {
-	protected $post;
+        protected $post;
 
-	public function __construct(PostRepository $post)
-	{
-		$this->post = $post;
-	}
+        public function __construct(PostRepository $post)
+        {
+        	$this->post = $post;
+        }
 
-	public function show($slug)
-	{
-		return $this->post->findBy('slug', $slug);
-	}
+        public function show($slug)
+        {
+        	return $this->post->findBy('slug', $slug);
+        }
 }
 ?>
 ```
@@ -95,7 +96,8 @@ class PostsController
 Dê uma olhada no que fizemos: primeiro, nós injetamos o nosso repositório, ```PostRepository``` no construtor e depois, no método ```show``` nós simplesmente usamos um método do repositório para achar posts em que a coluna slug da tabela posts tem o valor de  ```$slug```. O código está centralizado, fácil de testar e fácil de manter. 
 
 Espero que esse tutorial tenha ajudado alguém e mil desculas por quaisquer erros cometidos durante ele. :-)
-        
+
+**[Parte 2 do post: implementando interfaces e usando o container do Laravel]({% post_url /_posts/2016-01-13-trabalhando-com-repositorios-no-laravel-implementando-uma-interface %})**
         
         
         
