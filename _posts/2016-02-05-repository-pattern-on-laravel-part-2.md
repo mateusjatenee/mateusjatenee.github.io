@@ -14,7 +14,7 @@ categories:
 twitter_text:
 ---
 
-** Attention: if you haven't already seen the first part of this post, please take a look at it. [Repository Pattern on Laravel (Part 1)](/repository-pattern-on-laravel).**  
+**Attention: if you haven't already seen the first part of this post, please take a look at it.** [Repository Pattern on Laravel (Part 1)](/repository-pattern-on-laravel).
 
 
 In the previous post about repositories I talked about how to create an abstraction layer between the controller and the database. We used the following examples: `app/Http/Controllers/PostsController.php` and `app/Repositories/PostRepository.php`- to see the codes, just click the link in the top of this post.  
