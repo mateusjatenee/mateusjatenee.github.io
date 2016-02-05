@@ -14,7 +14,7 @@ categories:
 twitter_text:
 ---
 
-If you're looking for the part 2 of this post, check it out here. [Repository Pattern on Laravel Part 2: implementing an interface](repository-pattern-on-laravel-part-2).
+If you're looking for the part 2 of this post, check it out here. [Repository Pattern on Laravel Part 2: implementing an interface](/repository-pattern-on-laravel-part-2).
 
 Let's say you have a model called Post. It retrieve data from the ```Posts``` table and you use it in many methods and it is almost in the whole application. For now, it retrieves posts by it's ID, but your boss told you he wants it to retrieve by the post's name (slug). Now, there are two possibilities: your application is not big enough and you can just find and replace every ```Post::find($id)``` with something like ```Post::where('slug', $slug)->get()```. Perfect, everything works fine!  
 But what if your app is so big it will just take too much time/stress/whatever to change everything, you're retrieving the post by it's ID everywhere. What If we could create a layer between the business model and the data storing layer - in this case, our controller methods and the database? It would be nice, wouldn't it? It would avoid - between other things - duplicated code, testing, uncentralized code, etc. That's kind of what the repository pattern is about. 
@@ -100,4 +100,4 @@ So, take a look at what we did - first, we made the $post variable protected. Th
 
 I hope this tutorial helped, not really at writing them. Sorry for any mistakes I made in the tutorial.
 
-[Repository Pattern on Laravel Part 2: implementing an interface](repository-pattern-on-laravel-part-2).
+[Repository Pattern on Laravel Part 2: implementing an interface](/repository-pattern-on-laravel-part-2).

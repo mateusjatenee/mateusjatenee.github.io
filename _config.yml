@@ -14,8 +14,8 @@ gplus_username:  mateusjatenee
 disqus_username: mateusjatenee
 
 # Build settings
-markdown: redcarpet
-highlighter: pygments
+markdown: kramdown
+highlighter: rouge
 permalink: /:title/
 
 kramdown:
