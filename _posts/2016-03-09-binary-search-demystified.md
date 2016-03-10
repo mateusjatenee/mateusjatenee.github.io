@@ -15,7 +15,7 @@ twitter_text:
 
 In this post I'll show how straightforward a binary search is.  
 
-A binary search is nothing more than an algorithm that finds a value in an array. A **sorted** array. It executes in **O(log n)**. If you're not familiar with this notation, take a look at [Big-O Notation](https://en.wikipedia.org/wiki/Big_O_notation) and [Time Complexity](https://en.wikipedia.org/wiki/Time_complexity).    
+A binary search is nothing more than an algorithm that finds a value in an array. A **sorted** array. If the array is **not sorted**, then it may even be better to just linear search it. It executes in **O(log n)**. If you're not familiar with this notation, take a look at [Big-O Notation](https://en.wikipedia.org/wiki/Big_O_notation) and [Time Complexity](https://en.wikipedia.org/wiki/Time_complexity).    
 
 Let's say you have the following array: `[1, 3, 9, 14, 15, 19, 44, 51]`. You want to find the index of the number `15` and you instantly get a solution! just iterate through the array and check if the index value equals the one you wanted. So you'd write something like this in Javascript:  
 
