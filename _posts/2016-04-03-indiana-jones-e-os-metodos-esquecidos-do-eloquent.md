@@ -142,7 +142,7 @@ O método each é bem simples e executa um callback sobre cada item de uma cole�
 
 public function example3()
 {
-    $posts = Post::find(['1', '2', '3'])->each(function ($item, $key) {
+    $posts = Post::findMany(['1', '2', '3'])->each(function ($item, $key) {
         $item->update(['title' => 'Whatever']);
     });
 
