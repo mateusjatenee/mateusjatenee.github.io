@@ -29,7 +29,10 @@ public function getFirstSecondAndThirdPosts()
 	return $posts;
 }
 ?>
-```
+```  
+
+And that's what we got back. 
+
 
 ```json
 [
@@ -144,8 +147,11 @@ public function example3()
 }
 
 ?>  
+```  
 
 And that's what it returns:   
+
+
 ```json
 [
 {
