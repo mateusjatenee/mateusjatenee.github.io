@@ -2,9 +2,12 @@
 layout: post
 title: "Indiana Jones and Eloquent's Forgotten Methods"
 date: 2016-04-02 23:12:29
-image: '/assets/img/'
-description:
+image: '/assets/img/posts/indiana-jones-and-eloquents-forgotten-methods.png'
+description: Quick article talking about some unused Eloquent methods.
 tags:
+- php
+- eloquent
+- laravel
 categories:
 - laravel
 - php
