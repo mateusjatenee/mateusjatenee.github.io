@@ -14,7 +14,7 @@ twitter_text:
 
 There are some well-known Eloquent methods that everyone uses: `find`, `findOrFail`, `create`, etc. What many people don't know is that there are so many more methods we don't usually use. I'll talk about some of them here and how they can help you.  
 
-For better understanding, we're going to work with a imaginary table called `posts` that has the following columns: `INT id`, `VARCHAR title`, `TEXT content` and the usual `created_at` and `updated_at`. I made a GitHub Repo so you can see the code. I also created a database seeder so we have 100 records to work with.
+For better understanding, we're going to work with a imaginary table called `posts` that has the following columns: `INT id`, `VARCHAR title`, `TEXT content` and the usual `created_at` and `updated_at`. [https://github.com/mateusjatenee/indiana-jones-and-eloquents-forgotten-methods/](I made a GitHub Repo so you can see the code). I also created a database seeder so we have 100 records to work with.
 
 ## findMany  
 
