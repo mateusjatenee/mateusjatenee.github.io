@@ -142,7 +142,7 @@ Each is a simple method that executes a callback over each item while chunking. 
 
 public function example3()
 {
-    $posts = Post::find(['1', '2', '3'])->each(function ($item, $key) {
+    $posts = Post::findMany(['1', '2', '3'])->each(function ($item, $key) {
         $item->update(['title' => 'Whatever']);
     });
 
