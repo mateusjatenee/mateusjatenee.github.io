@@ -359,6 +359,8 @@ script: phpunit
 ```  
 
 We're basically telling Travis this:  
+
+
 - Set up a PHP environment
 - Use PHP 7.0 (you can specify multiple versions)
 - Before running our script, update composer, run `composer install`, create a `book_test` mysql database, copy `.env.travis` to `.env` and then run some artisan commands.
