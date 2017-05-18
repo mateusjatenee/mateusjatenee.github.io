@@ -18,6 +18,7 @@ twitter_text:
 I remember of some code I had to work on and it contained a switch statement like the one below
 
 ```php   
+<?php
 function get_state($state)
 {
     switch ($state) {
@@ -38,6 +39,7 @@ function get_state($state)
 What it does is pretty simple - just get the state initials and return it's full name. However, there are two lines of code for each state, plus it is very verbose. For 48 states there would be **at least** 96 lines. We can clean this up very quickly with a lookup table. Instead of writing dozens of cases for the switch statement, let's define an array with the initials as the keys and the full names as the values. Something like `initials => fullName`.  
 
 ```php  
+<?php
 function get_state($state)
 {
 	$states = [
